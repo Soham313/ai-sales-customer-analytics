@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-brand-950 text-brand-100 font-sans;
+  }
+}
+
+/* Premium UI Card Utilities */
+.glass-panel {
+  @apply bg-brand-900/40 backdrop-blur-md border border-brand-800/50 rounded-2xl p-6 transition-all duration-300;
+}
+
+.glass-panel:hover {
+  @apply border-brand-700/60 shadow-lg shadow-brand-950/50;
+}
+
+.interactive-card {
+  @apply border border-brand-800 bg-brand-900/20 rounded-2xl hover:bg-brand-900/50 hover:border-accent-500/50 transition-all duration-300;
+}
+
+.glow-purple {
+  box-shadow: 0 0 30px -5px rgba(139, 92, 246, 0.15);
+}
+
+.glow-blue {
+  box-shadow: 0 0 30px -5px rgba(59, 130, 246, 0.12);
+}
+
+/* Custom Scrollbar for sleek dashboard feel */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-brand-950;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-brand-800 rounded-full hover:bg-brand-700;
+}
